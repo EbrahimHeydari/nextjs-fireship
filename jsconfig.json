@@ -8,11 +8,8 @@
       "@/styles/*": [
         "styles/*"
       ],
-      "@/utils/*": [
-        "utils/*"
-      ],
-      "@/config/*": [
-        "config/*"
+      "@/lib/*": [
+        "lib/*"
       ],
     }
   }
