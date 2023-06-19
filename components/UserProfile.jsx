@@ -1,19 +1,15 @@
-// UI Component for user profile
-
-const UserProfile = ({ user }) => {
+// UI component for user profile
+export default function UserProfile({ user }) {
 	return (
 		<div className='box-center'>
 			<img
-				src={user.photoURL}
+				src={user.photoURL || '/hacker.png'}
 				className='card-img-center'
-				alt='photo'
 			/>
-      <p>
-        <i>@{user.username}</i>
-      </p>
-      <h1>{user.displayName}</h1>
+			<p>
+				<i>@{user.username}</i>
+			</p>
+			<h1>{user.displayName || 'Anonymous User'}</h1>
 		</div>
 	)
 }
-
-export default UserProfile
